@@ -1,0 +1,41 @@
+<style>
+            h1 {
+                color: pink;
+                background-color: aquamarine;
+            }
+
+            table {
+                border: 5px solid black;
+                border-radius:100px;
+                text-align: left;
+
+            }
+
+            td {
+                border:1px solid black;
+                padding:5px;
+            }
+
+            h2 {
+                border:outset pink;
+                text-align: center;
+                text-shadow: 5px 10px 0 gray;
+            }
+
+            p {
+                font-family: monospace;
+                white-space: pre;
+            }
+
+            img {
+                width:50px;
+            }
+
+            .clase{
+                background: black;
+                color: white;
+                font-size: 80px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+</style>

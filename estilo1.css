@@ -1,0 +1,41 @@
+<style>
+            h1 {
+                color: yellow;
+                background-color: blue;
+            }
+
+            table {
+                border: 1px solid black;
+                border-radius:10px;
+                text-align: center;
+
+            }
+
+            td {
+                border:1px solid black;
+                padding:10px;
+            }
+
+            h2 {
+                border:dashed pink;
+                text-align: center;
+                text-shadow: 5px 10px 0 gray;
+            }
+
+            p {
+                font-family: monospace;
+                white-space: pre;
+            }
+
+            img {
+                width:200px;
+            }
+
+            .clase{
+                background: black;
+                color: white;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+</style>
