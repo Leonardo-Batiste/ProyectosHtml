@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+	<h1>¿Que sabes de TU TEMA?</h1>
+	<form action="datos.php" method="post" enctype="multipart/form-data" name="formulario">
+		<fieldset>
+			<legend>Cuestionario</legend>
+			<!--El formato que he seguido ha sido el de usar label para las preguntas, y debajo el input adecuado, por ejemplo
+			En la pregunta 1, he usado el tipo texto, que sirve para que el usuario escriba lo que el quiera, pero con un maximo de 5 caracteres.
+			Tambien he puesto un placeholder, que contiene "escribe lo que quieras, maximo 5 caracteres" 
+			-->
+			<label for="pregunta1" />Pregunta 1:Maximo 5 caracteres</label>
+			<input type="text" name="texto" maxlength="5" placeholder="escribe lo que quieras, maximo 5 caracteres" />
+			<br>
+			<!--En este, he usado el atributo checked, para que se marque la 1º opcion como predeterminada-->
+			<label for="pregunta2" />Pregunta2:</label>
+			<input type="checkbox" name="opcion1" value="opcion1" checked>Opcion 1</label>
+			<input type="checkbox" name="opcion2" value="opcion2" >Opcion 2</label>
+			<input type="checkbox" name="opcion3" value="opcion3" >Opcion 3</label>
+			<input type="checkbox" name="opcion4" value="opcion4" >Opcion 4</label>
+			<br>
+			<!--Parecido a la opcion2, en este he usado el atributo required para que el usuario tenga que responder si o si a esta lista de opciones-->
+			<label for="pregunta3" />Pregunta3:</label>
+			<input type="radio" name="opcion" value="opcion1" required />Opcion 1</label>
+			<input type="radio" name="opcion" value="opcion2" />Opcion 2</label>
+			<input type="radio" name="opcion" value="opcion3" />Opcion 3</label>
+			<input type="radio" name="opcion" value="opcion4" />Opcion 4</label>
+			<br>
+			<!--Con el max="5", indica al usuario que puede usar un maximo de 5 caracteres-->
+			<label for="pregunta4" />Pregunta4(max:5):</label>
+			<input type="number" min="0" max="5" name="numero" title="numero"/>
+			<br>
+			<!--Los menus desplegables son distintos, se necesita en vez de input type, select y option-->
+			<label for="pregunta5" />Pregunta5:</label>
+			<select name="menu desplegable">
+				<option value="opcion1" />opcion1</option>
+				<option value="opcion2" />opcion2</option>
+				<option value="opcion3" />opcion3</option>
+			</select>
+			<br>
+			<!--El usuario puede elegir un color que quiera con un codigo alfanumerico-->
+			<label for="pregunta6" />Pregunta6:</label>
+			<input type="color" value="#b00b69" name="color"/>
+			<br>
+			<!--El usuario puede elegir la fecha que quiera entregar el formulario (por ejemplo)-->
+			<label for="pregunta7" />Pregunta7</label>
+			<input type="date" name="fecha"/>
+			<br>
+			<!--Aunque el name sea foto, es mas lo principal que va, pueden ir otro tipo de archivos-->
+			<label for="pregunta8" />Pregunta8:Inserta archivo</label>
+			<input type="file" name="foto" />
+			<br>
+			<!--Parecido al menu desplegable, el rango tambien es diferente sintacticamente-->
+			<label for="pregunta9" />Cuanto te ha gustado este formulario:</label>
+			<br>
+			<label>poco</label>
+			<input type="range"min="1" max="5" name="valoracion" />
+			<label>mucho</label>
+			<br>
+			<!--La verdad que no entiendo como funciona lo del patron, pero entiendo que de alguna manera primero dices
+			loscaracteres que puede haber y luego los que se pueden incluir-->
+			<label for="pregunta10" />Pregunta 10:Pon tu DNI</label>
+			<input type="text" name="dni" pattern="[0-9] {8}-[A-Z] title="12345678-A" placeholder="12345678-Z" />
+			<br>
+			<!--He usado esta pagina web, pero por alguuna razon (supongo que por politica de cada pagina) no aparece en la pagina en si-->
+			<label for="pregunta11" />Pregunta11</label>
+			<iframe src="https://sites.google.com/view/informaticasamuel/inicio/lenguaje-de-marcas?authuser=0" />
+			<br>
+			
+			
+			
+		</fieldset>
+	<br>
+	<input type="submit" value="Enviar" name="enviar"/>
+	<input type="reset" value="Limpiar formulario" name="limpiar formulario"/>
+	</form>
+</body>
+</html>
